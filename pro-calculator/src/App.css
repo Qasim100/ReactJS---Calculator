@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./images/RR.jpg");
+  background-size: cover;
+}
+
+.HeaderSec {
+  margin-top: 65px;
+  color: #ffba75;
+  font-size: 3em;
+}
+
+.BodySec {
+  background-color: #282c34;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border: 10px solid black;
+  text-align: center;
+  margin: auto;
+  width: 350px;
+}
+
+.Keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+
+input[type="text"] {
+  height: 75px;
+  width: 254px;
+  background-color: #282c34;
+  border: 0px;
+  color: aquamarine;
+  text-align: right;
+  font-size: larger;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.bi-backspace {
+  font-size: 2em;
+}
+button {
+  margin: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #967fcf;
+  color: white;
+  font-weight: 500;
+  font-size: large;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+.extraSmilee {
+  background: #e268bb;
+  font-size: 2em;
+}
+
+input:focus,
+input:active,
+button:active,
+button:focus {
+  outline: none;
+}
+.highlight {
+  background: #56cbdb;
+}
+/*  # represts ID property
+#Equaltoo {
+  grid-row: 1/3;
+  grid-column: 1;
+}
+#Clear {
+  grid-row: 1;
+  grid-column: 1/3;
+}
+*/
